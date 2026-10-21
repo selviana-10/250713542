@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Registrasi Acara Kampus</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Registrasi Acara Kampus</h1>
+        <p class="intro">
+            Isi semua data di bawah dengan benar, yaa!.
+        </p>
+        <p class="catatan">Tanda <span class="wajib">*</span> berarti wajib diisi.</p>
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <h3>1. Identitas Peserta</h3>
+            <table>
+                <tr>
+                    <td class="kiri"><label for="nama">Nama Peserta <span class="wajib">*</span></label></td>
+                    <td><input type="text" id="nama" name="nama" size="30" /></td>
+                </tr>
+                <tr>
+                    <td class="kiri"><label for="nim">Nomor Induk Mahasiswa <span class="wajib">*</span></label></td>
+                    <td><input type="text" id="nim" name="nim" size="30" /></td>
+                </tr>
+                <tr>
+                    <td class="kiri"><label for="prodi">Jurusan</label></td>
+                    <td>
+                        <select id="prodi" name="prodi">
+                            <option value="Informatika">Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kiri"><strong>Gender</strong></td>
+                    <td>
+                        <input type="radio" id="lakilaki" name="gender" value="Laki-laki" />
+                        <label for="lakilaki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>2. Pilihan Acara</h3>
+            <table>
+                <tr>
+                    <td class="kiri"><strong>Tipe Acara</strong></td>
+                    <td>
+                        <input type="radio" id="seminar" name="kegiatan" value="Seminar" />
+                        <label for="seminar">Seminar</label>
+                        <input type="radio" id="pelatihan" name="kegiatan" value="Pelatihan" />
+                        <label for="pelatihan">Pelatihan</label>
+                        <input type="radio" id="diskusi" name="kegiatan" value="Diskusi" />
+                        <label for="diskusi">Diskusi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kiri atas"><strong>Topik yang Diminati</strong></td>
+                    <td>
+                        <p>
+                            <input type="checkbox" id="teknologi" name="minat" value="Teknologi" />
+                            <label for="teknologi">Teknologi</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="organisasi" name="minat" value="Organisasi" />
+                            <label for="organisasi">Organisasi</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="karier" name="minat" value="Karier" />
+                            <label for="karier">Karier</label>
+                        </p>
+                        <p class="catatan">Boleh memilih lebih dari satu.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kiri"><label for="waktu">Sesi Acara</label></td>
+                    <td>
+                        <select id="waktu" name="waktu">
+                            <option value="Pagi">Sesi Pagi</option>
+                            <option value="Siang">Sesi Siang</option>
+                            <option value="Sore">Sesi Sore</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>3. Kelengkapan Daftar</h3>
+            <table>
+                <tr>
+                    <td class="kiri atas"><label for="harapan">Harapanmu untuk Acara Ini</label></td>
+                    <td><textarea id="harapan" name="harapan" rows="5" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="kiri atas"><label for="bukti">Unggah Bukti Pembayaran <span class="wajib">*</span></label></td>
+                    <td>
+                        <input type="file" id="bukti" name="bukti" />
+                        <p class="catatan">Sertakan foto atau tangkapan layar bukti transfer.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tengah">
+                        <input type="submit" name="kirim" value="Kirim Pendaftaran" />
+                        <input type="reset" name="ulang" value="Kosongkan Isian" />
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+        <div id="footer">
+            <p>Panitia Acara Kampus 2027 | Sampai jumpa di lokasi acara</p>
+        </div>
+    </div>
+</body>
+</html>

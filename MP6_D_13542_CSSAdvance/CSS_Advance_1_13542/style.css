@@ -1,0 +1,130 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    color: #222222;
+    background-color: #e9eef5;
+    text-align: center;
+}
+
+#wrapper {
+    width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #b0bccd;
+}
+
+h1 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #1f3b63;
+    border-bottom: 3px solid #1f3b63;
+}
+
+p.intro {
+    text-align: center;
+    line-height: 1.5;
+}
+
+p.catatan {
+    margin: 4px 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #555555;
+}
+
+span.wajib {
+    color: #c62828;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    font-family: inherit;
+    font-size: 14px;
+}
+
+input[type="text"], select, textarea {
+    padding: 5px;
+    border: 1px solid #8a99ad;
+}
+
+textarea {
+    width: 90%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #8a99ad;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #b0bccd;
+    background-color: #ffffff;
+}
+
+tr:hover td {
+    background-color: #f3f6fa;
+}
+
+td.kiri {
+    width: 32%;
+    font-weight: bold;
+    background-color: #dde6f2;
+}
+
+tr:hover td.kiri {
+    background-color: #cdd9ea;
+}
+
+td.atas {
+    vertical-align: top;
+}
+
+td.tengah {
+    text-align: center;
+    background-color: #f3f6fa;
+}
+
+p {
+    margin: 4px 0;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 8px 22px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    color: #ffffff;
+    background-color: #1f3b63;
+    border: 1px solid #1f3b63;
+}
+
+input[type="submit"]:hover {
+    background-color: #35598f;
+}
+
+input[type="reset"] {
+    color: #1f3b63;
+    background-color: #ffffff;
+    border: 1px solid #1f3b63;
+}
+
+input[type="reset"]:hover {
+    background-color: #dde6f2;
+}
+
+#footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #555555;
+    border-top: 1px solid #b0bccd;
+}
